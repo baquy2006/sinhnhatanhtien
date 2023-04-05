@@ -175,7 +175,7 @@
             display: none;
         }
         .toast{
-            background: white;
+            background:#fffffffe;
             position: absolute;
             width: 100%;
             height: 100%;
@@ -219,25 +219,37 @@
             font-family: 'Ms Madi', chữ thảo;
             animation: text-crush 2s forwards 1s;
             cursor: pointer;
+            
         }
+        
         @keyframes text-crush{
             0%{
                 color: black;
             }
             100%{
                 color: red;
-                filter: drop-shadow(0 0 15px red);
+                filter:drop-shadow(10px 5px 15px rgba(0,0,0,0.5));
             }
         }
         .icon{
-            font-size: 40px;
-            color: red;
+            font-size: 80px;
+            background: linear-gradient(90deg, 
+            #ed1c24,
+            #ff00ff,
+            #00f7ff,
+            #ffee00);
             opacity: 0;
+            -webkit-background-clip: text;
+             -webkit-text-fill-color: transparent;
+             background-size: 400%;
             margin-top: 5%;
             transition: 1s;
             cursor: pointer;
-            animation: mail 1s forwards 3s infinite;
+            filter:drop-shadow(5px 5px 10px rgba(0,0,0,0.5));
+            animation: mail 1s forwards 3s infinite, colorchange  2s linear infinite; 
+           
         }
+      
         @keyframes mail{
             0%{
                 opacity: 1;
@@ -254,6 +266,14 @@
             100%{
                 opacity: 1;
             }
+        }
+        @keyframes colorchange {
+            0% {
+                background-position: 0%;
+              }
+              100% {
+                background-position: 100%;
+              }
         }
         @media screen and (max-width: 768px) {
             body{
