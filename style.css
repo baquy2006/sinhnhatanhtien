@@ -236,8 +236,8 @@
             background: linear-gradient(90deg, 
             #ed1c24,
             #ff00ff,
-            #00f7ff,
-            #ffee00);
+            #ff0000,
+            #c300ff);
             opacity: 0;
             -webkit-background-clip: text;
              -webkit-text-fill-color: transparent;
@@ -245,9 +245,15 @@
             margin-top: 5%;
             transition: 1s;
             cursor: pointer;
-            filter:drop-shadow(5px 5px 10px rgba(0,0,0,0.5));
+        
+            filter:drop-shadow(2px 2x 2px rgba(0,0,0,0.5)), brightness();
             animation: mail 1s forwards 3s infinite, colorchange  2s linear infinite; 
-           
+            text-shadow: 0 0 2px #f40303,
+  0 0 2000px #f40303,
+  0 0 40px #f40303,
+  0 0 80px #f40303,
+  0 0 160px #f40303,
+  0 0 400px #f40303;
         }
       
         @keyframes mail{
