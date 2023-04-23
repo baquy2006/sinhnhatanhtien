@@ -1,8 +1,10 @@
 // ----------ấn click thì hiện ra bảng phần class="toast"
-const clickbutton = document.querySelector('#text')
-  clickbutton.addEventListener("click", function(){
-    document.querySelector('.container').style.display = "flex"
-  })
+const myButton = document.getElementById("myButton");
+
+myButton.addEventListener("click", function() {
+  // Add your code here to be executed when the button is clicked
+  window.location.href = "index2.html"; // Example code to redirect to index2.html
+});
 // -------------hết ấn click-------------------------
 
 
