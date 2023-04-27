@@ -143,7 +143,7 @@ svg .cls-3 {
     top: 28%;
     cursor: pointer;
     box-shadow: 2px 8px 10px rgba(0, 0, 0, 0.449);
-    animation: imageAvt 2s 2s forwards alternate;
+    animation: imageAvt 4s 6s forwards alternate;
 }
 
 @keyframes imageAvt {
@@ -374,6 +374,7 @@ button {
     border-color: #fcb3b3;
     border-style: solid;
     border-width: 9px;
+
     border-radius: 35px;
     font-size: 15px;
     font-weight: 900;
@@ -383,7 +384,8 @@ button {
     border-color 400ms ease-in-out,
     background-color 400ms ease-in-out;
     word-spacing: -2px;
-    
+   
+   
   }
   
   @keyframes movingBorders {
