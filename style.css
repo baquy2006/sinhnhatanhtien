@@ -7,7 +7,7 @@
 }
 
 body {
-    background-image: url("anh/bgr.jpg");
+    background-image: url("anh/pexels-photo-2088205.webp");
     background-size: cover;
     background-repeat: no-repeat;
     display: flex;
@@ -369,8 +369,8 @@ button {
     align-items: center;
     padding: 20px 25px 20px 22px;
     box-shadow: rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
-    background-color:rgb(255, 110, 110);
-    border-color: #ffe2e2;
+    background-color:rgb(241, 212, 212);
+    border-color: #fcb3b3;
     border-style: solid;
     border-width: 9px;
     border-radius: 35px;
@@ -399,7 +399,7 @@ button {
   }
   
   button:hover {
-    background-color: #f68686;
+    background-color: #f89494;
     transform: scale(105%);
     animation: movingBorders 3s infinite;
   }
@@ -415,6 +415,7 @@ button {
     opacity: 0;
     top: 20px;
     left: 22px;
+    
   }
   
   @keyframes beatingHeart {
